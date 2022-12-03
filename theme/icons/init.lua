@@ -2,13 +2,15 @@ local dir = os.getenv('HOME') .. '/.config/awesome/theme/icons'
 
 return {
   --tags
-  chrome = dir .. '/brave.svg',
+  chrome = dir .. '/google-chrome.svg',
   code = dir .. '/code-braces.svg',
   social = dir .. '/forum.svg',
   folder = dir .. '/folder.svg',
   music = dir .. '/music.svg',
   game = dir .. '/google-controller.svg',
   lab = dir .. '/flask.svg',
+  anime = dir .. '/anime.svg',
+  entertainment = dir .. '/entertainment.svg',
   --others
   menu = dir .. '/menu.svg',
   close = dir .. '/close.svg',

@@ -11,27 +11,15 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.code,
-    type = 'code',
-    defaultApp = apps.default.editor,
-    screen = 1
-  },
-  {
     icon = icons.social,
     type = 'social',
     defaultApp = apps.default.social,
     screen = 1
   },
   {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = apps.default.game,
-    screen = 1
-  },
-  {
-    icon = icons.folder,
-    type = 'files',
-    defaultApp = apps.default.files,
+    icon = icons.anime,
+    type = 'anime',
+    defaultApp = apps.default.anime,
     screen = 1
   },
   {
@@ -41,11 +29,23 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.lab,
-    type = 'any',
-    defaultApp = apps.default.rofi,
+    icon = icons.entertainment,
+    type = 'entertainment',
+    defaultApp = apps.default.entertainment,
     screen = 1
-  }
+  },
+  {
+    icon = icons.code,
+    type = 'code',
+    defaultApp = apps.default.editor,
+    screen = 1
+  },
+  {
+    icon = icons.folder,
+    type = 'files',
+    defaultApp = apps.default.files,
+    screen = 1
+  },
 }
 
 awful.layout.layouts = {
