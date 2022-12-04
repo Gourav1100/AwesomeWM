@@ -9,6 +9,8 @@ local mat_icon_button = require('widget.material.icon-button')
 local mat_icon = require('widget.material.icon')
 local dpi = require('beautiful').xresources.apply_dpi
 local icons = require('theme.icons')
+local battery_widget = wibox.container.margin(require("widget.battery"), dpi(1), dpi(1), dpi(2), dpi(1));
+local bluetooth = require("widget.gobo.awesome.bluetooth")
 
 -- Titus - Horizontal Tray
 local systray = wibox.widget.systray()
@@ -92,7 +94,7 @@ local LayoutBox = function(s)
 end
 
 local TopPanel = function(s)
-  
+
     local panel =
     wibox(
     {
@@ -132,8 +134,12 @@ local TopPanel = function(s)
         wibox.container.margin(systray, dpi(3), dpi(3), dpi(6), dpi(3)),
         -- Layout box
         LayoutBox(s),
+        -- bluetooth_widget
+        wibox.container.margin(bluetooth.new(), dpi(3), dpi(3), dpi(6), dpi(3)),
         -- Clock
         clock_widget,
+        -- -- battery_widget
+        battery_widget,
       }
     }
 
